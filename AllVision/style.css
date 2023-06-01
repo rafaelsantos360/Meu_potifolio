@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{    
+    background: url(/personal_project/assets/background-image.jpg);
+    height: 425px;
+
+    }
+
+nav{
+    background: black;
+    color: white;
+    height: 20px;
+}
+
+main{
+    background-image: radial-gradient(circle, #2e0144, #120320);
+    color: white;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1000px;
+    
+}
+
+footer{
+    color:white;
+    background: black;
+    height: 50px;
+}
