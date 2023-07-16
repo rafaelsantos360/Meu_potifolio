@@ -5,16 +5,29 @@
     text-decoration: none;
 }
 
-header{    
-    background: url(/personal_project/assets/background-image.jpg);
-    height: 425px;
 
-    }
+header{ 
+    background: #120320;   
+    display: flex;
+    justify-content: space-between;
+    
+}
 
-nav{
-    background: black;
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 50px;    
+}
+
+a{
     color: white;
-    height: 20px;
+}
+
+a:hover{
+    color: yellow;
 }
 
 main{
