@@ -4,32 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        
-        <img src="assets/heaterBat01.jpeg" alt="" srcset="">
-        <img src="assets/heaterToy03.jpg" alt="" srcset="">
-        <img src="assets/headerSpider01.webp" alt="" srcset="">
-        
+<body class="border-0 bd-example-cols"></body>
+    <header class="row">  
+        <img class="col" src="assets/heaterBat01.jpeg" alt="" srcset="">
+        <img class="col-2" src="assets/heaterToy03.jpg" alt="" srcset="">
+        <img class="col" src="assets/headerSpider01.webp" alt="" srcset="">
+        <img class="col-3" src="assets/avatar2.jpeg" alt="" srcset="">
+
+        <nav>
+            <div class="logo">
+                <p>ALL VISION</p>
+            </div>
+            <ul class="nav nav-tabs">
+                <li  class="nav-item"><a  class="nav-link active" href="#">FILME</a></li>
+                <li class="nav"><a class="nav-link" href="#">SÉRIE</a></li>
+                <li class="nav"><a class="nav-link" href="#">ANIMAÇÃO</a></li>
+                <li class="nav"><a class="nav-link" href="#">DOCUMENTARIOS</a></li>
+            </ul>    
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <a href="#">FILME</a>
-            <a href="#">SÉRIE</a>
-            <a href="#">ANIMAÇÃO</a>
-            <a href="#">DOCUMENTARIOS</a>
-        </ul>    
-    </nav>
-    <main>
-        conteudo
+
+    <main class="ps-4 pt-3">
+        <section class="row">
+            <h2>Filmes</h2>
+            <div class="col">
+                <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            </div>
+        </section>
+        <section class="row">
+            <h2>Séries</h2>
+            <div class="col">
+                <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            </div>
+        </section>
+        <section class="row">
+            <h2>Animações</h2>
+            <div class="col">
+                <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
+                <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            </div>
+        </section>
     </main>
 
     <footer>
-        roda-pé
+        <p>Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
