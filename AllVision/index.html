@@ -20,7 +20,7 @@
 
         <nav>
             <div class="logo">
-                <p>ALL VISION</p>
+                <h2>ALL VISION</h2>
             </div>
             <ul class="nav nav-tabs">
                 <li  class="nav-item"><a  class="nav-link active" href="#">FILME</a></li>
@@ -31,62 +31,95 @@
         </nav>
     </header>
 
-    <main class="ps-4 pt-3">
-        <section class="row">
+    <main class=" m-5">
+        
+        <section>
             <h2>Filmes</h2>
-            <div class="col">
-                <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            <div class="container row">
+                <div class="col-lg-3">
+                    <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3"  id="filme">
+                    <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
             </div>
         </section>
-        <section class="row">
+    
+        <section>
             <h2>Séries</h2>
-            <div class="col">
-                <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            <div class="container row">
+                <div class="col-lg-3">
+                    <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
             </div>
         </section>
-        <section class="row">
+        <section>
             <h2>Animações</h2>
-            <div class="col">
-                <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+            <div class="container row">
+                <div class="col-lg-3">
+                    <img class="item 01  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 02  img-thumbnail" src="assets/avatar2.jpeg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 03  img-thumbnail" src="assets/headerSpider01.webp" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 04  img-thumbnail" src="assets/heaterToy.jpg" alt="" srcset="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="item 05  img-thumbnail" src="assets/01-24.jpg" alt="" srcset="">
+                </div>
             </div>
         </section>
     </main>
+    <script>
+        let botao = document.getElementById('button')
+        let current = 0
+        botao.addEventListener("click", function next() {
+            let slide = document.getElementById('slide')
+            alert(slide.innerHTML)
+            current++
+                
+        });
+    </script>
 
     <footer>
         <p>Todos os direitos reservados</p>

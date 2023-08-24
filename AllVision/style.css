@@ -13,6 +13,7 @@
 }
 body {
     background-color: var(--cinza);
+    background-attachment: fixed;
 }
 
 header{ 
@@ -22,22 +23,27 @@ header{
     width: 100vw;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.568);
 }
+
 .row{
     --bs-gutter-x: none;
+    flex-wrap: nowrap;
 }
 
+
 img{
+    display: block;
     height: 550px;
     width: 350px;
 }
 
 .item{
+    display: block;
     width: 300px;
     height: 200px;
 }
 
 nav{
-    background-color: #000000;
+    background-color: var(--cinza);
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -75,12 +81,21 @@ main{
     display: grid;
     gap: 50px;
     background-image: radial-gradient(circle, var(--roxo-claro), var(--roxo-escuro), var(--roxo));
-    
+    border-radius: 50px;
     color: white;
     margin: 0 auto;
+    padding: 50px 20px;
     height: auto;
-    max-width: 1180px;
+    max-width: 1370px;
     
+}
+h2{
+    color: brown;
+}
+.container{
+    float: left;
+    width: 1300px;
+    overflow: auto;
 }
 
 
@@ -88,7 +103,8 @@ footer{
     display: flex;
     justify-content: center;
     color:white;
-    background: black;
+    background: var(--cinza);
+    box-shadow: 5px 2px 30px black;
     width: 100vw;
     height: 50px;
 }

@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+
+
+    /** sunny side **/
+    --blue-background: #c2e9f6;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --indigo-background: #808fc7;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+     
+}
+
+body{
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    display: grid;
+    place-content: center;
+    width: 400px;
+    height: 400px;
+    background-color: #F1F1F1;   
+    border-radius: 20px;
+}
+
+.toggle--checkbox {
+    display: none;
+  }
+
+.toggle--label{
+    width: 200px;
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid var(--blue-border);
+    font-size: 1rem;
+    background-color: var(--blue-color);
+
+    display: flex;
+    position: relative;
+    transform: all 360ms ease-in;
+    letter-spacing:.1em;
+    top:-10px;
+    left: -10px;
+}
+
+.toggle--label::before{
+   animation-name: reverse;
+   animation-duration: 350ms;
+   animation-fill-mode: forwards;
+   transition: all 360ms ease-in;
+   content: '';
+   margin: auto ;
+   width: 82px;
+   height: 82px;
+   border: 5px solid var(--yellow-border);
+   left: 4px;
+   position: absolute;
+   border-radius: 82px;
+   background-color: var(--yellow-background);
+}
+
+@keyframes reverse{
+    0%{
+        left: 104px;
+        width: 82px;
+    }
+    70%{
+        left: 72px;
+        width: 112px;
+    }
+    100% {left: 4px;}
+
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--blue-background);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 250ms ease-in;
+}
+
+.toggle--label--background{
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 135px;
+    left: 45px;
+    background: var(--white);
+    transition: all 150ms ease-in;
+}
+
+.toggle--label--background::before{
+    content: '';
+    position: absolute;
+    top: -5;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -20;
+    transition: all 150ms ease-in;
+}
+.toggle--label--background::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -10px;
+    transition: all 150ms ease-in;
+}
+
+.toggle--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+}
